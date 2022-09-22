@@ -1,2 +1,2 @@
 #this is a test
-print(4)
+clientSecret = secrets.discordOathSecret
