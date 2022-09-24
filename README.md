@@ -1,1 +1,1 @@
-"# reddit-info-bot" 
+# reddit-info-bot
