@@ -1,6 +1,7 @@
 #this is a test
 import discord
 from discord.ext import commands
+from discord import Intents
 
 intents = Intents.default()
 intents.members = True
