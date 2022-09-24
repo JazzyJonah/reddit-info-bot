@@ -19,7 +19,7 @@ async def on_ready():
 
 @client.command(pass_context = True)
 async def on_message(message):
-	if message.startsWith("r!reddit"):
+	if message.startswith("r!reddit"):
 		await message.channel.send("reddit.com")
 
 client.run(os.getenv("DISCORD_TOKEN"))
