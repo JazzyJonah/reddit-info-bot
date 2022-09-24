@@ -19,7 +19,7 @@ async def on_ready():
 	)
 
 @client.command(pass_context = True)
-async def reddit():
+async def reddit(ctx):
 	await ctx.send("reddit.com")
 
 client.run(str(secrets.discordOathKey))
