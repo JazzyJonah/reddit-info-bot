@@ -6,7 +6,7 @@ from discord import Intents
 intents = Intents.default()
 intents.members = True
 
-client = commands.Bot(command_prefix="r!")
+client = commands.Bot(command_prefix="r!", intents = intents)
 client.remove_command("help")
 
 
