@@ -16,14 +16,10 @@ load_dotenv()
 @client.event
 async def on_ready():
 	print(f"We have logged in as {client.user}")
-	await client.change_precense(activity = discord.Activity(
-		type = discord.ActivityType.watching,
-		name = "Reddit posts." )
-	)
 
 @client.command(pass_context = True)
 async def on_message(message):
 	if message.startsWith("r!reddit"):
-		await ctx.send("reddit.com")
+		await message.channel.send("reddit.com")
 
 client.run(os.getenv("DISCORD_TOKEN"))
