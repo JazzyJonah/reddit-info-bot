@@ -1,13 +1,16 @@
 #this is a test
 import discord
+import os
 from discord.ext import commands
 from discord import Intents
+from dotenv import load_dotenv
 
 intents = Intents.default()
 intents.members = True
-
 client = commands.Bot(command_prefix="r!", intents = intents)
 client.remove_command("help")
+
+load_dotenv()
 
 
 @client.event
@@ -22,4 +25,4 @@ async def on_ready():
 async def reddit(ctx):
 	await ctx.send("reddit.com")
 
-client.run(str(secrets.discordOathKey))
+client.run(os.getenv("DISCORD_TOKEN"))
