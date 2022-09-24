@@ -22,7 +22,8 @@ async def on_ready():
 	)
 
 @client.command(pass_context = True)
-async def reddit(ctx):
-	await ctx.send("reddit.com")
+async def on_message(message):
+	if message.startsWith("r!reddit"):
+		await ctx.send("reddit.com")
 
 client.run(os.getenv("DISCORD_TOKEN"))
