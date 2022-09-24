@@ -17,7 +17,6 @@ load_dotenv()
 async def on_ready():
 	print(f"We have logged in as {client.user}")
 
-@client.command(pass_context = True)
 async def on_message(message):
 	if message.startswith("r!reddit"):
 		await message.channel.send("reddit.com")
