@@ -1,4 +1,3 @@
 numpy==1.23.2
 discord.py
 python-dotenv
-discord.ext
