@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import os
 import time
-from api-test import check_reddit_account
+from apitest import check_reddit_account
 
 
 intents = discord.Intents.default()
