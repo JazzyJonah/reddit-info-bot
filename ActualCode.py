@@ -5,14 +5,15 @@ import os
 intents = discord.Intents.default()
 intents.message_content = True
 
-client = discord.Client(intents=intents)
+client = commands.Bot(command_prefix='r!', intents=intents)
+
 
 @client.event
 async def on_ready():
-    print(f'We have logged in as {client.user}')
+    print(f'Logged in as {client.user} (ID: {client.user.id})')
 
-@Commands.bot
+@client.command()
 async def reddit(ctx):
-	ctx.send("https://reddit.com")
+    await ctx.send("https://reddit.com")
 
 client.run(os.getenv("DISCORD_TOKEN"))  
