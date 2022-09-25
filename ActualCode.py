@@ -22,8 +22,8 @@ async def reddit(ctx):
 boolean=True
 while True:
 	if boolean:
-		if check_reddit_account("JazzyJonah123")[0]:
-			client.get_channel(837114010301759489).message.send(check_reddit_account("JazzyJonah123")[1] + check_reddit_account("JazzyJonah123")[2] + '<@627917067332485120>')
+		if check_reddit_account("TylerHelperFinal")[0]:
+			client.get_channel(837114010301759489).message.send(check_reddit_account("TylerHelperFinal")[1] + check_reddit_account("TylerHelperFinal")[2] + '<@627917067332485120>')
 			boolean=False
 	time.sleep(1.5)
 
