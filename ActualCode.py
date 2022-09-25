@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 
 intents = Intents.default()
 intents.members = True
+intents.message_content = True
 client = commands.Bot(command_prefix="r!", intents = intents)
 client.remove_command("help")
 
