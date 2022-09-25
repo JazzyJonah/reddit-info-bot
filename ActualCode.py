@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 import os
+import time
+
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -16,4 +18,6 @@ async def on_ready():
 async def reddit(ctx):
     await ctx.send("https://reddit.com")
 
-client.run(os.getenv("DISCORD_TOKEN"))  
+
+
+client.run(os.getenv("DISCORD_TOKEN"))
